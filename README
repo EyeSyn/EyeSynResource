@@ -1,3 +1,14 @@
+# EyeSyn Research Artifacts
+
+This repository contains the research artifacts for paper ["EyeSyn: Psychology-inspired Eye Movement Synthesis for Gaze-based Activity Recognition"]().
+If you have any questions on this repository or the related paper, please contact **ANONYMOUS AUTHOR** via *X [DOT] Y [AT] Z*.
+
+## **Outline**
+
+* [Demo Video for Case Study](#1)
+
+## 1. <span id="1"> Demo Video for Case Study</span>
+
 Instructions to view EyeSyn demo video
 --------------------------------------
 
@@ -7,3 +18,5 @@ Instructions to view EyeSyn demo video
 
 
 https://github.com/EyeSyn/EyeSynResource/blob/main/EyeSynDemoVideoShort.mp4
+
+
