@@ -53,13 +53,13 @@ For both devices, we ask the subjects to perform each of the four activities, i.
 <p align="center">
      <table>
           <tr>
-               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/talking1.gif" alt="Text1" style="width: 450px;"/> 
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleStimuli/talking1.gif" alt="Text1" style="width: 450px;"/> 
                     <p align="center">(a) Video clip extracted from [4] </p>
                </td>
-               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/talking6.gif" alt="Text3" style="width: 450px;"/> 
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleStimuli/talking6.gif" alt="Text3" style="width: 450px;"/> 
                     <p align="center">(b) Video clip extracted from [5] </p>
                </td>
-               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/talking4.gif" alt="Text2" style="width: 450px;"/> 
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleStimuli/talking4.gif" alt="Text2" style="width: 450px;"/> 
                     <p align="center">(c) Video clip extracted from [6] </p>
                </td>
           </tr>
@@ -68,6 +68,22 @@ For both devices, we ask the subjects to perform each of the four activities, i.
 </br>
   
  - **Browse**: we randomly select a subset of 200 images from the public avaliable *''Best Artworks of All Time''* painting image dataset [[7]](https://www.kaggle.com/ikarus777/best-artworks-of-all-time) that contains 7,937 images of famous paintings. During the data collection, for each of the subjects, we randomly select 30 images from the subset and show each of the selected images to the subject for 10 seconds. Examples of the painting images used in the data collection are shown below:
+
+<p align="center">
+     <table>
+          <tr>
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleText1.png" alt="Text1" style="width: 450px;"/> 
+                    <p align="center">(a) Text image extracted from “You and YourResearch” </p>
+               </td>
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleText2.png" alt="Text2" style="width: 450px;"/> 
+                    <p align="center">(b) Text image extracted from “Rich Dad Poor Dad” </p>
+               </td>
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleText3.png" alt="Text3" style="width: 450px;"/> 
+                    <p align="center">(c) Text image extracted from “Discrete Calculus” </p>
+               </td>
+          </tr>
+     </table>
+</p>
 
 
 </br>
