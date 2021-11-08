@@ -72,14 +72,17 @@ For both devices, we ask the subjects to perform each of the four activities, i.
 <p align="center">
      <table>
           <tr>
-               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleText1.png" alt="Text1" style="width: 450px;"/> 
-                    <p align="center">(a) Text image extracted from “You and YourResearch” </p>
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleStimuli/51.png" alt="Text1" style="width: 450px;"/> 
+                    <p align="center"></p>
                </td>
-               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleText2.png" alt="Text2" style="width: 450px;"/> 
-                    <p align="center">(b) Text image extracted from “Rich Dad Poor Dad” </p>
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleStimuli/177.png" alt="Text2" style="width: 450px;"/> 
+                    <p align="center"></p>
                </td>
-               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleText3.png" alt="Text3" style="width: 450px;"/> 
-                    <p align="center">(c) Text image extracted from “Discrete Calculus” </p>
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleStimuli/185.png" alt="Text1" style="width: 450px;"/> 
+                    <p align="center"></p>
+               </td>
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleStimuli/194.png" alt="Text1" style="width: 450px;"/> 
+                    <p align="center"></p>
                </td>
           </tr>
      </table>
