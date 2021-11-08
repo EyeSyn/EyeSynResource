@@ -9,6 +9,7 @@ If you have any questions on this repository or the related paper, please contac
 
 ## 1. <span id="1"> Demo Video</span>
 
+[![Demo](https://github.com/EyeSyn/EyeSynResource/blob/main/demoGIF.gif)](https://youtu.be/s3GtVBg2JMg)
 
 You can also download the demo video
 
