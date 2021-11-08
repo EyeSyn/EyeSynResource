@@ -28,4 +28,18 @@ We collect a gaze dataset, denoted as *MuseumActivity*. The study is approved by
 ### 3.1 Activities and Visual Stimuli used in Data Collection
 For both devices, we ask the subjects to perform each of the four activities, i.e., *Read, Communicate, Browse, and Watch*, for five minutes. They can freely choose the stimuli that we have prepared:
 
-- **Read**: we create three sets of text images from three digital reading materials that differ in both text layout and font size: a transcription of Richard Hamming’s talk on *“You and YourResearch”*; a chapter from the book *“Rich Dad Poor Dad”*; and achapter from the book *“Discrete Calculus”*；
+- **Read**: we create three sets of text images from three digital reading materials that differ in both text layout and font size: a transcription of Richard Hamming’s talk on *“You and YourResearch”* [1]; a chapter from the book *“Rich Dad Poor Dad”* [2]; and achapter from the book *“Discrete Calculus”*[3]；
+
+  [1] J. F. Kaiser, "*Richard hamming-you and your research*." Simula Research Laboratory. Springer, Berlin, Heidelberg, 2010. 37-60. 
+  
+  [2]  R. T. Kiyosaki and Sharon L. Lechter, "*Rich dad poor dad: What the rich teach their kids about money that the poor and the middle class do not!*", Business Plus, 2001.
+  
+  [3] L. J. Grady and J. R. Polimeni, "Discrete calculus: Applied analysis on graphs forcomputational science", Springer Science & Business Media, 2010
+
+- **Communicate**: seven monologue videos are prepared, including: three video clips extracted from *an online interview withAnthony Fauci* [4]; two video clips extracted from *the ACM Turing Award Laureate interview with Raj Reddy* [5]; and *two online Youtube videos* in which the speaker is giving advice on career development [5]. All videos have only one speaker.
+
+  [4] "Interview video with Anthony Fauci - on changing science, long COVID, and political intrusion into health agencies," [Link to the Youtube video](https://www.youtube.com/watch?v=bkoip6-yeBE).
+
+  [5] "Interview video with Dabbala Rajagopal (Raj) Reddy," [Link to the Youtube video](https://www.youtube.com/watch?v=h99ryGYGnc0).
+
+  [6] "Videos on career and academic resource," [Link to the Youtube video](https://www.youtube.com/playlist?list=PLnGTnWKBZrh8MvERPR_KgiANsrEmulzGO).
