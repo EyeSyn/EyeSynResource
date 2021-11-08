@@ -7,7 +7,7 @@ If you have any questions on this repository or the related paper, please contac
 
 * [Demo Video](#1)
 * [MuseumActivity Eye Movement Dataset](#2)
-* * [Synthetic Eye Movement Dataset](#3)
+* [Synthetic Eye Movement Dataset](#3)
 
 ## 1. <span id="1"> Demo Video</span>
 
