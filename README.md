@@ -43,3 +43,7 @@ For both devices, we ask the subjects to perform each of the four activities, i.
   [5] "Interview video with Dabbala Rajagopal (Raj) Reddy," [Link to the Youtube video](https://www.youtube.com/watch?v=h99ryGYGnc0).
 
   [6] "Videos on career and academic resource," [Link to the Youtube video](https://www.youtube.com/playlist?list=PLnGTnWKBZrh8MvERPR_KgiANsrEmulzGO).
+  
+ - **Browse**: we randomly select a subset of 200 images from a public painting image dataset [7] that contains 7,937 images of famous paintings. During the data collection, for each of the subjects, we randomly select 30 images from the subset and show each of the selected images to the subject for 10 seconds.
+
+  [7] 
