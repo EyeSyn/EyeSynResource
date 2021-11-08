@@ -11,7 +11,7 @@ If you have any questions on this repository or the related paper, please contac
 
 ## 1. <span id="1"> Demo Video</span>
 
-A short demo video of the gaze-based museum activity recognition is shown below. The demo is running on the Magic Leap One AR headset. The system leverages the gaze signals captured by the AR headset to continuouly track the interactive activity the user is performing, i.e., reading the text descriptions of an exhibit or browsing the painting. Then, based on the recognized user context, they AR system adjusts the digital content that is rendered in the user's view to enhance her engagment and learning experience.
+A short demo video of the gaze-based museum activity recognition is shown below. The demo is running on the [Magic Leap One](https://www.magicleap.com/en-us/magic-leap-1) AR headset. The system leverages the gaze signals captured by [the onboard eye tracker](https://developer.magicleap.com/en-us/learn/guides/design-eye-gaze) in Magic Leap One to continuouly track the interactive activity the user is performing, i.e., reading the text descriptions of an exhibit or browsing the painting. Then, based on the recognized user context, they AR system adjusts the digital content that is rendered in the user's view to enhance her engagment and learning experience.
 
 **Note: You can find the full demo video on Youtube by simply clicking the gif image below.**
 [![Demo](https://github.com/EyeSyn/EyeSynResource/blob/main/demoGIF.gif)](https://youtu.be/s3GtVBg2JMg)
@@ -21,3 +21,11 @@ A short demo video of the gaze-based museum activity recognition is shown below.
 
 
 ## 3. <span id="3"> MuseumActivity Eye Movement Dataset</span>
+### 3.1 Data Collection Setup
+
+We collect a gaze dataset, denoted as *MuseumActivity*. The study is approved by our institution's Institutional Review Board. Two different eye tracking devices, the [PupilLabs](https://pupil-labs.com/products/core/) and the [Magic Leap One](https://www.magicleap.com/en-us/magic-leap-1), are used in the data collection. Eight subjects (three female and five male, aged between 24 and 33) participate in the study: four subjects leverage the onboard eye tracker in the Magic Leap One, while the others use the Pupil Labs for eye movement collection. Both devices capture eye movements with the sampling frequency of 30Hz. Specifically, the subjects who are wearing the Pupil Labs are sitting in front of a 34-inch computer monitor at a distance of 50cm. The visual stimulus for each of the activities is displayed on the monitor. The resolution of the display is 800x600. We conduct the manufacturer's default on-screen five-points calibration for each of the subjects. For the Magic Leap One, the stimuli are rendered as virtual holograms placed on blank white walls around a room at head height. The holograms are with a size of 50cmx50cm in size, and their distances to the subjects are 1 to 1.5m. We perform the built-in visual calibration on the Magic Leap One for each of the subjects. 
+
+### 3.1 Activities and Visual Stimuli
+For both devices, we ask the subjects to perform each of the four activities, i.e., *Read, Communicate, Browse, and Watch*, for five minutes. They can freely choose the stimuli that we have prepared:
+
+- **Read**: we create three sets of text images from three digital reading materials that differ in both text layout and font size: a transcription of Richard Hamming’s talk on *“You and YourResearch”*; a chapter from the book *“Rich Dad Poor Dad”*; and achapter from the book *“Discrete Calculus”*；
