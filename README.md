@@ -86,7 +86,7 @@ For both devices, we ask the subjects to perform each of the four activities, i.
 </p>
 </br>
 
- - **Watch**: we randomly pick six short documentary videos from the online video series of the *"National Geographic Animals 101"* [[7]](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts). Each video lasts for 5 to 6 minutes. Examples are shown below:
+ - **Watch**: we randomly pick six short documentary videos from the online video series of the *"National Geographic Animals 101"* [[8]](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts). Each video lasts for 5 to 6 minutes. Examples are shown below:
 
 <p align="center">
      <table>
@@ -123,6 +123,8 @@ The preprocessed dataset can be download [**here**]().
   [5] "Interview video with Dabbala Rajagopal (Raj) Reddy," [Link to the Youtube video](https://www.youtube.com/watch?v=h99ryGYGnc0).
 
   [6] "Videos on career and academic resource," [Link to the Youtube video playlist](https://www.youtube.com/playlist?list=PLnGTnWKBZrh8MvERPR_KgiANsrEmulzGO).
-  
-  [7] "National geographic animals 101," [Link to the Youtube video playlist](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts).
+
+  [7] "Best artworks of all time image dataset," [Link to the dataset](https://www.kaggle.com/ikarus777/best-artworks-of-all-time).
+
+  [8] "National geographic animals 101," [Link to the Youtube video playlist](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts).
 
