@@ -28,22 +28,57 @@ We collect a gaze dataset, denoted as *MuseumActivity*. The study is approved by
 ### 3.1 Activities and Visual Stimuli used in Data Collection
 For both devices, we ask the subjects to perform each of the four activities, i.e., *Read, Communicate, Browse, and Watch*, for five minutes. They can freely choose the stimuli that we have prepared:
 
-- **Read**: we create three sets of text images from three digital reading materials that differ in both text layout and font size: a transcription of Richard Hamming’s talk on *“You and YourResearch”* [1]; a chapter from the book *“Rich Dad Poor Dad”* [2]; and achapter from the book *“Discrete Calculus”*[3]；
+- **Read**: we create three sets of text images from three digital reading materials that differ in both text layout and font size: a transcription of Richard Hamming’s talk on *“You and YourResearch”* [1]; a chapter from the book *“Rich Dad Poor Dad”* [2]; and achapter from the book *“Discrete Calculus”*[3]. Examples of the text images we used as the visual stimuli are shown below:
+
+<p align="center">
+     <table>
+          <tr>
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleText1.png" alt="Text1" style="width: 450px;"/> 
+                    <p align="center">(a) Text image extracted from “You and YourResearch” </p>
+               </td>
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleText2.png" alt="Text2" style="width: 450px;"/> 
+                    <p align="center">(b) Text image extracted from “Rich Dad Poor Dad” </p>
+               </td>
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/exampleText3.png" alt="Text3" style="width: 450px;"/> 
+                    <p align="center">(b) Text image extracted from “Discrete Calculus” </p>
+               </td>
+          </tr>
+     </table>
+</p>
+
+
+- **Communicate**: seven monologue videos are prepared, including: three video clips extracted from *an online interview withAnthony Fauci* [[4]](https://www.youtube.com/watch?v=bkoip6-yeBE); two video clips extracted from *the ACM Turing Award Laureate interview with Raj Reddy* [[5]](https://www.youtube.com/watch?v=h99ryGYGnc0); and *two online Youtube videos* in which the speaker is giving advice on career development [[6]](https://www.youtube.com/playlist?list=PLnGTnWKBZrh8MvERPR_KgiANsrEmulzGO). All videos have only one speaker. Snapshots of the video stimuli are shown below:
+
+<p align="center">
+     <table>
+          <tr>
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/talking1.gif" alt="Text1" style="width: 450px;"/> 
+                    <p align="center">(a) Video clip extracted from [4] </p>
+               </td>
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/talking6.gif" alt="Text3" style="width: 450px;"/> 
+                    <p align="center">(b) Video clip extracted from [5] </p>
+               </td>
+               <td> <img src="https://github.com/EyeSyn/EyeSynResource/blob/main/talking4.gif" alt="Text2" style="width: 450px;"/> 
+                    <p align="center">(b) Video clip extracted from [6] </p>
+               </td>
+          </tr>
+     </table>
+</p>
+
+  
+ - **Browse**: we randomly select a subset of 200 images from a public painting image dataset [7] that contains 7,937 images of famous paintings. During the data collection, for each of the subjects, we randomly select 30 images from the subset and show each of the selected images to the subject for 10 seconds.
+
+References and links to the original inputs:
 
   [1] J. F. Kaiser, "*Richard hamming-you and your research*." Simula Research Laboratory. Springer, Berlin, Heidelberg, 2010. 37-60. 
   
   [2]  R. T. Kiyosaki and Sharon L. Lechter, "*Rich dad poor dad: What the rich teach their kids about money that the poor and the middle class do not!*", Business Plus, 2001.
   
-  [3] L. J. Grady and J. R. Polimeni, "Discrete calculus: Applied analysis on graphs forcomputational science", Springer Science & Business Media, 2010
-
-- **Communicate**: seven monologue videos are prepared, including: three video clips extracted from *an online interview withAnthony Fauci* [4]; two video clips extracted from *the ACM Turing Award Laureate interview with Raj Reddy* [5]; and *two online Youtube videos* in which the speaker is giving advice on career development [5]. All videos have only one speaker.
-
+  [3] L. J. Grady and J. R. Polimeni, "Discrete calculus: Applied analysis on graphs forcomputational science", Springer Science & Business Media, 2010.
+  
   [4] "Interview video with Anthony Fauci - on changing science, long COVID, and political intrusion into health agencies," [Link to the Youtube video](https://www.youtube.com/watch?v=bkoip6-yeBE).
 
   [5] "Interview video with Dabbala Rajagopal (Raj) Reddy," [Link to the Youtube video](https://www.youtube.com/watch?v=h99ryGYGnc0).
 
   [6] "Videos on career and academic resource," [Link to the Youtube video](https://www.youtube.com/playlist?list=PLnGTnWKBZrh8MvERPR_KgiANsrEmulzGO).
-  
- - **Browse**: we randomly select a subset of 200 images from a public painting image dataset [7] that contains 7,937 images of famous paintings. During the data collection, for each of the subjects, we randomly select 30 images from the subset and show each of the selected images to the subject for 10 seconds.
 
-  [7] 
