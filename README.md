@@ -9,17 +9,11 @@ If you have any questions on this repository or the related paper, please contac
 
 ## 1. <span id="1"> Demo Video</span>
 
+A short demo video of the gaze-based museum activity recognition is shown below. The demo is running on the Magic Leap One AR headset. The system leverages the gaze signals captured by the Magic Leap One to continuouly track the interactive activity the user is performing. Then, based on the recognized user context, they AR system adjusts the digital content that is rendered in the user's view to enhance her engagment and learning experience.
+
+**Note: by clicking the gif below, you will be redirected to the full demo video located on Youtube.**
 [![Demo](https://github.com/EyeSyn/EyeSynResource/blob/main/demoGIF.gif)](https://youtu.be/s3GtVBg2JMg)
 
-You can also download the demo video
-
-Instructions to view EyeSyn demo video
---------------------------------------
-
-1. Click on 'EyeSynDemoVideo.mp4' above.
-2. Click 'Download'.
-3. Open the file using any software that can play .mp4 files (e.g. Windows Media Player, Quicktime Player).
 
 
-https://github.com/EyeSyn/EyeSynResource/blob/main/EyeSynDemoVideoShort.mp4
 
