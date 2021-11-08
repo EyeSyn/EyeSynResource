@@ -107,7 +107,7 @@ For both devices, we ask the subjects to perform each of the four activities, i.
 
 ### 2.3 Download the Dataset
 
-The dataset will be made avaliable [**here**](). 
+The dataset will be made available [**here**](). 
 
 
 ## 3. <span id="3"> Synthetic Eye Movement Dataset</span>
