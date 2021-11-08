@@ -6,6 +6,8 @@ If you have any questions on this repository or the related paper, please contac
 ## **Outline**
 
 * [Demo Video](#1)
+* [Synthetic Eye Movement Dataset](#2)
+* [MuseumActivity Eye Movement Dataset](#3)
 
 ## 1. <span id="1"> Demo Video</span>
 
@@ -15,5 +17,7 @@ A short demo video of the gaze-based museum activity recognition is shown below.
 [![Demo](https://github.com/EyeSyn/EyeSynResource/blob/main/demoGIF.gif)](https://youtu.be/s3GtVBg2JMg)
 
 
+## 2. <span id="2"> Synthetic Eye Movement Dataset</span>
 
 
+## 3. <span id="3"> MuseumActivity Eye Movement Dataset</span>
