@@ -25,7 +25,7 @@ We collect a gaze dataset, denoted as *MuseumActivity*. The study is approved by
 ### 2.2 Activities and Visual Stimuli used in Data Collection
 For both devices, we ask the subjects to perform each of the four activities, i.e., *Read, Communicate, Browse, and Watch*, for five minutes. They can freely choose the stimuli that we have prepared:
 
-- **Read**: we create three sets of text images from three digital reading materials that differ in both text layout and font size: a transcription of Richard Hamming’s talk on *“You and Your Research”* [1]; a chapter from the book *“Rich Dad Poor Dad”* [2]; and a chapter from the book *“Discrete Calculus”* [3]. Examples of the text images we used as the visual stimuli are shown below:
+- **Read**: we create three sets of text images from three digital reading materials that *differ in both text layout and font size*: a transcription of Richard Hamming’s talk on *“You and Your Research”* [1]; a chapter from the book *“Rich Dad Poor Dad”* [2]; and a chapter from the book *“Discrete Calculus”* [3]. Examples of the text images we used as the visual stimuli are shown below:
 
 <p align="center">
      <table>
@@ -114,11 +114,11 @@ The dataset will be made available [**here**]().
 
 ## **References**:
 
-  <p>[1] J. F. Kaiser, "Richard hamming-you and your research", Simula Research Laboratory. Springer, Berlin, Heidelberg, 2010. 37-60.</p> 
+  <p>[1] J. F. Kaiser, "Richard hamming-you and your research," Simula Research Laboratory. Springer, Berlin, Heidelberg, 2010. 37-60.</p> 
   
-  <p>[2]  R. T. Kiyosaki and Sharon L. Lechter, "Rich dad poor dad: What the rich teach their kids about money that the poor and the middle class do not!", Business Plus, 2001.</p>
+  <p>[2]  R. T. Kiyosaki and Sharon L. Lechter, "Rich dad poor dad: What the rich teach their kids about money that the poor and the middle class do not!," Business Plus, 2001.</p>
   
-  [3] L. J. Grady and J. R. Polimeni, "Discrete calculus: Applied analysis on graphs forcomputational science", Springer Science & Business Media, 2010.
+  [3] L. J. Grady and J. R. Polimeni, "Discrete calculus: Applied analysis on graphs forcomputational science," Springer Science & Business Media, 2010.
   
   [4] "Interview video with Anthony Fauci - on changing science, long COVID, and political intrusion into health agencies," [Link to the Youtube video](https://www.youtube.com/watch?v=bkoip6-yeBE).
 
