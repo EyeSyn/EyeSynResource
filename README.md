@@ -11,9 +11,9 @@ If you have any questions on this repository or the related paper, please contac
 
 ## 1. <span id="1"> Demo Video</span>
 
-A short demo video of the gaze-based museum activity recognition is shown below. The demo is running on the [Magic Leap One](https://www.magicleap.com/en-us/magic-leap-1) AR headset. The system leverages the gaze signals captured by [the onboard eye tracker](https://developer.magicleap.com/en-us/learn/guides/design-eye-gaze) in Magic Leap One to continuouly track the interactive activity the user is performing, i.e., reading the text descriptions of an exhibit or browsing the painting. Then, based on the recognized user context, they AR system adjusts the digital content that is rendered in the user's view to enhance her engagment and learning experience.
+A short demo video of the gaze-based museum activity recognition is shown below. The demo is running on the [Magic Leap One](https://www.magicleap.com/en-us/magic-leap-1) AR headset. The system leverages the gaze signals captured by [the onboard eye tracker](https://developer.magicleap.com/en-us/learn/guides/design-eye-gaze) in Magic Leap One to continuously track the interactive activity the user is performing, i.e., reading the text descriptions of an exhibit or browsing the painting. Then, based on the recognized user context, they AR system adjusts the digital content that is rendered in the user's view to enhance her engagement and learning experience.
 
-**Note: You can find the full demo video on Youtube by simply clicking the gif image below.**
+**Note: You can find the full demo video on YouTube by clicking the gif image below.**
 [![Demo](https://github.com/EyeSyn/EyeSynResource/blob/main/demoGIF.gif)](https://youtu.be/s3GtVBg2JMg)
 
 
@@ -25,7 +25,7 @@ We collect a gaze dataset, denoted as *MuseumActivity*. The study is approved by
 ### 2.2 Activities and Visual Stimuli used in Data Collection
 For both devices, we ask the subjects to perform each of the four activities, i.e., *Read, Communicate, Browse, and Watch*, for five minutes. They can freely choose the stimuli that we have prepared:
 
-- **Read**: we create three sets of text images from three digital reading materials that differ in both text layout and font size: a transcription of Richard Hamming’s talk on *“You and YourResearch”* [1]; a chapter from the book *“Rich Dad Poor Dad”* [2]; and achapter from the book *“Discrete Calculus”*[3]. Examples of the text images we used as the visual stimuli are shown below:
+- **Read**: we create three sets of text images from three digital reading materials that differ in both text layout and font size: a transcription of Richard Hamming’s talk on *“You and Your Research”* [1]; a chapter from the book *“Rich Dad Poor Dad”* [2]; and a chapter from the book *“Discrete Calculus”* [3]. Examples of the text images we used as the visual stimuli are shown below:
 
 <p align="center">
      <table>
@@ -45,7 +45,7 @@ For both devices, we ask the subjects to perform each of the four activities, i.
 
 </br>
 
-- **Communicate**: seven monologue videos are prepared, including: three video clips extracted from *an online interview withAnthony Fauci* [[4]](https://www.youtube.com/watch?v=bkoip6-yeBE); two video clips extracted from *the ACM Turing Award Laureate interview with Raj Reddy* [[5]](https://www.youtube.com/watch?v=h99ryGYGnc0); and *two online Youtube videos* in which the speaker is giving advice on career development [[6]](https://www.youtube.com/playlist?list=PLnGTnWKBZrh8MvERPR_KgiANsrEmulzGO). All videos have only one speaker. Snapshots of the video stimuli are shown below:
+- **Communicate**: seven monologue videos are prepared, including: three video clips extracted from *an online interview with Anthony Fauci* [[4]](https://www.youtube.com/watch?v=bkoip6-yeBE); two video clips extracted from *the ACM Turing Award Laureate interview with Raj Reddy* [[5]](https://www.youtube.com/watch?v=h99ryGYGnc0); and *two online YouTube videos* in which the speaker is giving advice on career development [[6]](https://www.youtube.com/playlist?list=PLnGTnWKBZrh8MvERPR_KgiANsrEmulzGO). All videos have only one speaker. Snapshots of the video stimuli are shown below:
 
 <p align="center">
      <table>
@@ -64,7 +64,7 @@ For both devices, we ask the subjects to perform each of the four activities, i.
 </p>
 </br>
   
- - **Browse**: we randomly select a subset of 200 images from the public avaliable *''Best Artworks of All Time''* painting image dataset [[7]](https://www.kaggle.com/ikarus777/best-artworks-of-all-time) that contains 7,937 images of famous paintings. During the data collection, for each of the subjects, we randomly select 30 images from the subset and show each of the selected images to the subject for 10 seconds. Examples of the painting images used in the data collection are shown below:
+ - **Browse**: we randomly select a subset of 200 images from the public available *''Best Artworks of All Time''* painting image dataset [[7]](https://www.kaggle.com/ikarus777/best-artworks-of-all-time) that contains 7,937 images of famous paintings. During the data collection, for each of the subjects, we randomly select 30 images from the subset and show each of the selected images to the subject for 10 seconds. Examples of the painting images used in the data collection are shown below:
 
 <p align="center">
      <table>
@@ -114,8 +114,10 @@ The dataset will be made available [**here**]().
 
 ## **References**:
 
-  <p>[1] J. F. Kaiser, "*Richard hamming-you and your research*." Simula Research Laboratory. Springer, Berlin, Heidelberg, 2010. 37-60.</p> 
-  <p>[2]  R. T. Kiyosaki and Sharon L. Lechter, "*Rich dad poor dad: What the rich teach their kids about money that the poor and the middle class do not!*", Business Plus, 2001.</p>
+  <p>[1] J. F. Kaiser, "Richard hamming-you and your research", Simula Research Laboratory. Springer, Berlin, Heidelberg, 2010. 37-60.</p> 
+  
+  <p>[2]  R. T. Kiyosaki and Sharon L. Lechter, "Rich dad poor dad: What the rich teach their kids about money that the poor and the middle class do not!", Business Plus, 2001.</p>
+  
   [3] L. J. Grady and J. R. Polimeni, "Discrete calculus: Applied analysis on graphs forcomputational science", Springer Science & Business Media, 2010.
   
   [4] "Interview video with Anthony Fauci - on changing science, long COVID, and political intrusion into health agencies," [Link to the Youtube video](https://www.youtube.com/watch?v=bkoip6-yeBE).
