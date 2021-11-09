@@ -134,15 +134,15 @@ We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye m
   
   [3] L. J. Grady and J. R. Polimeni, "Discrete calculus: Applied analysis on graphs forcomputational science," Springer Science & Business Media, 2010.
   
-  [4] "Interview video with Anthony Fauci - on changing science, long COVID, and political intrusion into health agencies," [Link to the Youtube video](https://www.youtube.com/watch?v=bkoip6-yeBE).
+  [4] "Interview video with Anthony Fauci - on changing science, long COVID, and political intrusion into health agencies," [Link to the YouTube video](https://www.youtube.com/watch?v=bkoip6-yeBE).
 
-  [5] "Interview video with Dabbala Rajagopal (Raj) Reddy," [Link to the Youtube video](https://www.youtube.com/watch?v=h99ryGYGnc0).
+  [5] "Interview video with Dabbala Rajagopal (Raj) Reddy," [Link to the YouTube video](https://www.youtube.com/watch?v=h99ryGYGnc0).
 
-  [6] "Videos on career and academic resource," [Link to the Youtube video playlist](https://www.youtube.com/playlist?list=PLnGTnWKBZrh8MvERPR_KgiANsrEmulzGO).
+  [6] "Videos on career and academic resource," [Link to the YouTube video playlist](https://www.youtube.com/playlist?list=PLnGTnWKBZrh8MvERPR_KgiANsrEmulzGO).
 
   [7] "Best artworks of all time image dataset," [Link to the dataset](https://www.kaggle.com/ikarus777/best-artworks-of-all-time).
 
-  [8] "National geographic animals 101," [Link to the Youtube video playlist](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts).
+  [8] "National geographic animals 101," [Link to the YouTube video playlist](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts).
   
   [9] L. A. Levin, P. L. Kaufman, and A. Alm, “Adler’s physiology of the eye,” 2011.
   
