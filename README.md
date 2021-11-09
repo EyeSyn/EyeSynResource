@@ -123,7 +123,7 @@ We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye m
 
 - **Browse**: we leverage the public available *''Best Artworks of All Time''* painting image dataset [[7]](https://www.kaggle.com/ikarus777/best-artworks-of-all-time), which consists of 7,937 images of famous paintings, as the inputs of the **StaticScene model**. *The source code of StaticScene model with example will be made available [**here**]()*. 
 
-- **Watch**: we extract 50 short documentary videos from the online video series of the “*National Geographic Animals 101*” [[8]](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts) as the inputs of the **DynamicScene model**. *Each video lasts for 2 to 6 minutes. The source code of DynamicScene model with example will be made available [**here**]()*. 
+- **Watch**: we extract 50 short documentary videos from the online video series of the “*National Geographic Animals 101*” [[8]](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts) as the inputs of the **DynamicScene model**. Each video lasts for 2 to 6 minutes. *The source code of DynamicScene model with example will be made available [**here**]()*. 
 
 
 ## **References**:
