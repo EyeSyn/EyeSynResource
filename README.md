@@ -115,10 +115,11 @@ The preprocessed dataset will be made available [**here**]().
 ## 3. <span id="3"> Synthetic Eye Movement Dataset</span>
 
 ### 3.1 Inputs for Eye Movement Synthesis
-We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye movement dataset, denoted as SynGaze. The detailsof SynGaze are summarized in Table 3. Specifically, we use the following image and video data as the inputs to simulate gaze signals for the four activities:
+We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye movement dataset, denoted as SynGaze. Specifically, we use the following image and video data as the inputs to simulate gaze signals for the four activities:
 
 - **Read**: we extract 100 text images from each of the three digital books, “*Rich Dad Poor Dad*” [2], “*Discrete Calculus*” [3], and the “*Adler’s Physiology of the Eye*” [9]. The three books differ in both text layout and font size. The extracted text images are used as the inputs of the **ReadingGaze model** 
 
+- **Communicate**: we extract 100 monologue video clips from the online interview series of the “*ACM Turing Award Laureate interview*” [10] as the inputs of the **VerbalGaze model**. Each video clip lasts 5 to 7 minutes with a frame rate of 30fps.
 
 
 ## **References**:
@@ -140,4 +141,6 @@ We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye m
   [8] "National geographic animals 101," [Link to the Youtube video playlist](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts).
   
   [9] L. A. Levin, P. L. Kaufman, and A. Alm, “Adler’s physiology of the eye,” 2011.
+  
+  [10] "ACM A.M. Turing award laureate interviews," [Link to the YouTube video playlist](https://www.youtube.com/playlist?list=PLn0nrSd4xjjaSLBSzmno-3Ods6FJE9nlO).
 
