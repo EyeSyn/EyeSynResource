@@ -121,6 +121,11 @@ We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye m
 
 - **Communicate**: we extract 100 monologue video clips from the online interview series of the “*ACM Turing Award Laureate interview*” [10] as the inputs of the **VerbalGaze model**. Each video clip lasts 5 to 7 minutes with a frame rate of 30fps.
 
+- **Browse**: we leverage the public available *''Best Artworks of All Time''* painting image dataset [[7]](https://www.kaggle.com/ikarus777/best-artworks-of-all-time), which consists of 7,937 images of famous paintings, as the inputs of the **StaticScene model**.
+
+- **Watch**: we extract 50 short documentary videos from the online video series of the “*National Geographic Animals 101*” [[8]](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts) as the inputs of the **DynamicScene model**. Each videolasts for 2 to 6 minutes
+
+**Note:** to aviod potential copyright infringement, we will not share the extracted video clips. Instead, we will open-source our generative models and provide detailed examples of 
 
 ## **References**:
 
