@@ -117,15 +117,15 @@ The preprocessed dataset will be made available [**here**]().
 ### 3.1 Inputs for Eye Movement Synthesis
 We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye movement dataset, denoted as SynGaze. Specifically, we use the following image and video data as the inputs to simulate gaze signals for the four activities:
 
-- **Read**: we extract 100 text images from each of the three digital books, “*Rich Dad Poor Dad*” [2], “*Discrete Calculus*” [3], and the “*Adler’s Physiology of the Eye*” [9]. The three books differ in both text layout and font size. The extracted text images are used as the inputs of the **ReadingGaze model** 
+- **Read**: we extract 100 text images from each of the three digital books, “*Rich Dad Poor Dad*” [2], “*Discrete Calculus*” [3], and the “*Adler’s Physiology of the Eye*” [9]. The three books differ in both text layout and font size. The extracted text images are used as the inputs of the **ReadingGaze model**. The source code of ReadingGaze model with example will be made available [**here**](). 
 
-- **Communicate**: we extract 100 monologue video clips from the online interview series of the “*ACM Turing Award Laureate interview*” [10] as the inputs of the **VerbalGaze model**. Each video clip lasts 5 to 7 minutes with a frame rate of 30fps.
+- **Communicate**: we extract 100 monologue video clips from the online interview series of the “*ACM Turing Award Laureate interview*” [10] as the inputs of the **VerbalGaze model**. Each video clip lasts 5 to 7 minutes with a frame rate of 30fps. The source code of VerbalGaze model with example will be made available [**here**](). 
 
-- **Browse**: we leverage the public available *''Best Artworks of All Time''* painting image dataset [[7]](https://www.kaggle.com/ikarus777/best-artworks-of-all-time), which consists of 7,937 images of famous paintings, as the inputs of the **StaticScene model**.
+- **Browse**: we leverage the public available *''Best Artworks of All Time''* painting image dataset [[7]](https://www.kaggle.com/ikarus777/best-artworks-of-all-time), which consists of 7,937 images of famous paintings, as the inputs of the **StaticScene model**. The source code of StaticScene model with example will be made available [**here**](). 
 
-- **Watch**: we extract 50 short documentary videos from the online video series of the “*National Geographic Animals 101*” [[8]](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts) as the inputs of the **DynamicScene model**. Each videolasts for 2 to 6 minutes
+- **Watch**: we extract 50 short documentary videos from the online video series of the “*National Geographic Animals 101*” [[8]](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts) as the inputs of the **DynamicScene model**. Each videolasts for 2 to 6 minutes. The source code of DynamicScene model with example will be made available [**here**](). 
 
-**Note:** to aviod potential copyright infringement, we will not share the extracted video clips. Instead, we will open-source our generative models and provide detailed examples of 
+**Note:** to aviod potential copyright infringement, we will not share the extracted video clips. Instead, we will open-source our generative models and provide detailed examples of the synthesizing process, such that one can easily prepared his/her own inputs and use the models for eye movement synthesis.
 
 ## **References**:
 
