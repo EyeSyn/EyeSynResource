@@ -7,7 +7,9 @@ If you have any questions on this repository or the related paper, please contac
 
 * [Demo Video](#1)
 * [VisualProcessingActivity Eye Movement Dataset](#2)
-* [Synthetic Eye Movement Dataset](#3)
+* [EyeSyn Implementation](#3)
+* [Citation](#4)
+* [Acknowledgments](#5)
  
 ## 1. <span id="1"> Demo Video</span>
 
@@ -112,7 +114,7 @@ For both devices, we ask the subjects to perform each of the four activities, i.
 The preprocessed dataset will be made available [**here**](). 
 
 
-## 3. <span id="3"> Synthetic Eye Movement Dataset</span>
+## 3. <span id="3"> EyeSyn Implementation</span>
 
 ### 3.1 Inputs for Eye Movement Synthesis
 We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye movement dataset, denoted as SynGaze. Specifically, we use the following image and video data as the inputs to simulate gaze signals for the four activities. **Note that**, to aviod potential copyright infringement, we will not share the extracted video clips and images that are used in the dataset generation. Instead, we will open-source our generative models and provide detailed examples of the synthesizing process, such that one can easily prepared his/her own inputs and use the models for eye movement synthesis.
@@ -141,9 +143,9 @@ Please cite the following paper in your publications if the codes or dataset hel
 We thank the study's participants for their time in the data collection. This study was done in the [Intelligent Interactive Internet of Things Lab](https://maria.gorlatova.com/) at [Duke University](https://www.duke.edu/), and was approved by our institution's Institutional Review Board.  
 
 The authors of this repository are [Guohao Lan](https://guohao.netlify.com/), [Tim Scargill](https://sites.duke.edu/timscargill/), and [Maria Gorlatova](https://maria.gorlatova.com/). Contact Information of the authors: 
-* g.lan AT tudelft.nl
-* timothyjames.scargill AT duke.edu
-* maria.gorlatova AT duke.edu
+* Guohao Lan (g.lan AT tudelft.nl)
+* Tim Scargill (timothyjames.scargill AT duke.edu)
+* Maria Gorlatova (maria.gorlatova AT duke.edu)
 
 This work was supported in part by NSF grants CSR-1903136 and CNS-1908051, NSF CAREER Award IIS-2046072, and an IBM Faculty Award.
 
