@@ -1,12 +1,12 @@
 # Research Artifacts of EyeSyn
-This repository contains the research artifacts for paper ["EyeSyn: Psychology-inspired Eye Movement Synthesis for Gaze-based Activity Recognition"](), which is currently under submission to IPSN'22. 
+This repository contains the research artifacts for the **ACM/IEEE IPSN 2022** paper ["EyeSyn: Psychology-inspired Eye Movement Synthesis for Gaze-based Activity Recognition"](https://maria.gorlatova.com/wp-content/uploads/2022/03/EyeSyn_CR.pdf) by [Guohao Lan](https://guohao.netlify.app/), [Tim Scargill](https://sites.duke.edu/timscargill/), and [Maria Gorlatova](https://maria.gorlatova.com/). 
 
-If you have any questions on this repository or the related paper, please contact **ANONYMOUS AUTHOR** via *X [DOT] Y [AT] Z*.
+If you have any questions on this repository or the related paper, please contact **Guohao Lan** via *g.lan [AT] tudelft [DOT] NL*.
 
 ## **Outline**
 
 * [Demo Video](#1)
-* [MuseumActivity Eye Movement Dataset](#2)
+* [VisualProcessingActivity Eye Movement Dataset](#2)
 * [Synthetic Eye Movement Dataset](#3)
  
 ## 1. <span id="1"> Demo Video</span>
@@ -17,10 +17,10 @@ A short demo video of the gaze-based museum activity recognition is shown below.
 [![Demo](https://github.com/EyeSyn/EyeSynResource/blob/main/demoGIF.gif)](https://youtu.be/s3GtVBg2JMg)
 
 
-## 2. <span id="2"> MuseumActivity Eye Movement Dataset</span>
+## 2. <span id="2"> VisualProcessingActivity Eye Movement Dataset</span>
 ### 2.1 Data Collection Setup
 
-We collect a gaze dataset, denoted as *MuseumActivity*. The study is approved by our institution's Institutional Review Board. Two different eye tracking devices, the [PupilLabs](https://pupil-labs.com/products/core/) and the [Magic Leap One](https://www.magicleap.com/en-us/magic-leap-1), are used in the data collection. Eight subjects (three female and five male, aged between 24 and 33) participate in the study: four subjects leverage the onboard eye tracker in the Magic Leap One, while the others use the Pupil Labs for eye movement collection. Both devices capture eye movements with the sampling frequency of 30Hz. Specifically, the subjects who are wearing the Pupil Labs are sitting in front of a 34-inch computer monitor at a distance of 50cm. The visual stimulus for each of the activities is displayed on the monitor. The resolution of the display is 800x600. We conduct the manufacturer's default on-screen five-points calibration for each of the subjects. For the Magic Leap One, the stimuli are rendered as virtual holograms placed on blank white walls around a room at head height. The holograms are with a size of 50cmx50cm in size, and their distances to the subjects are 1 to 1.5m. We perform the built-in visual calibration on the Magic Leap One for each of the subjects. 
+We collect a gaze dataset, denoted as *VisualProcessingActivity*. The study is approved by our institution's Institutional Review Board. Two different eye tracking devices, the [PupilLabs](https://pupil-labs.com/products/core/) and the [Magic Leap One](https://www.magicleap.com/en-us/magic-leap-1), are used in the data collection. Eight subjects (three female and five male, aged between 24 and 33) participate in the study: four subjects leverage the onboard eye tracker in the Magic Leap One, while the others use the Pupil Labs for eye movement collection. Both devices capture eye movements with the sampling frequency of 30Hz. Specifically, the subjects who are wearing the Pupil Labs are sitting in front of a 34-inch computer monitor at a distance of 50cm. The visual stimulus for each of the activities is displayed on the monitor. The resolution of the display is 800x600. We conduct the manufacturer's default on-screen five-points calibration for each of the subjects. For the Magic Leap One, the stimuli are rendered as virtual holograms placed on blank white walls around a room at head height. The holograms are with a size of 50cmx50cm in size, and their distances to the subjects are 1 to 1.5m. We perform the built-in visual calibration on the Magic Leap One for each of the subjects. 
 
 ### 2.2 Activities and Visual Stimuli used in Data Collection
 For both devices, we ask the subjects to perform each of the four activities, i.e., *Read, Communicate, Browse, and Watch*, for five minutes. They can freely choose the stimuli that we have prepared:
@@ -125,6 +125,27 @@ We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye m
 
 - **Watch**: we extract 50 short documentary videos from the online video series of the “*National Geographic Animals 101*” [[8]](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts) as the inputs of the **DynamicScene model**. Each video lasts for 2 to 6 minutes. *The source code of DynamicScene model with example will be made available [**here**]()*. 
 
+## 4. <span id="4">Citation</span>
+
+Please cite the following paper in your publications if the codes or dataset helps your research.
+
+     @inproceedings{Lan22EyeSyn,
+      title={{EyeSyn}: Psychology-inspired eye movement synthesis for gaze-based activity recognition},
+      author={Lan, Guohao and Scargill, Tim and Gorlatova, Maria},
+      booktitle={Proceedings of the ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN)},
+      year={2022}
+    }
+
+
+## 5. <span id="5">Acknowledgments</span>
+We thank the study's participants for their time in the data collection. This study was done in the [Intelligent Interactive Internet of Things Lab](https://maria.gorlatova.com/) at [Duke University](https://www.duke.edu/), and was approved by our institution's Institutional Review Board.  
+
+The authors of this repository are [Guohao Lan](https://guohao.netlify.com/), [Tim Scargill](https://sites.duke.edu/timscargill/), and [Maria Gorlatova](https://maria.gorlatova.com/). Contact Information of the authors: 
+* g.lan AT tudelft.nl
+* timothyjames.scargill AT duke.edu
+* maria.gorlatova AT duke.edu
+
+This work was supported in part by NSF grants CSR-1903136 and CNS-1908051, NSF CAREER Award IIS-2046072, and an IBM Faculty Award.
 
 ## **References**:
 
