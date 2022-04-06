@@ -5,13 +5,20 @@ If you have any questions on this repository or the related paper, please contac
 
 ## **Outline**
 
-* [Demo Video](#1)
-* [VisualProcessingActivity Eye Movement Dataset](#2)
-* [EyeSyn Implementation](#3)
-* [Citation](#4)
-* [Acknowledgments](#5)
+* [Overview](#1)
+* [Demo Video](#2)
+* [Eye Movement Dataset](#3)
+* [EyeSyn Implementation](#4)
+* [Citation](#5)
+* [Acknowledgments](#6)
  
-## 1. <span id="1"> Demo Video</span>
+## 1. <span id="1"> Overview</span> 
+<p align="center"><img src="systemOverview.png" width="480"\></p>
+<p align="center"><strong>Figure 1. Overview of EyeSyn design.</strong></p> 
+
+EyeSyn is a comprehensive set of psychology-inspired generative models for eye movement synthesis. An overview of EyeSyn is shown in Figure 1. It takes publicly available images and videos as the inputs to synthesize realistic eye movements for four common categories of cognitive activity, including: *text reading*, *verbal communication*, and *static and dynamic scene perception*. EyeSyn incorporates three psychology-inspired generative models to synthesize the corresponding visual behaviors that would be captured by an eye tracker when a subject is performing the activity. Moreover, to generate realistic gaze signals, the fixation model is introduced to simulate gaze perturbations that result from both microsaccades and the measurement noise in eye tracking. EyeSyn opens up opportunities to generate realistic, large-scale eye movement datasets that can facilitate the training of gaze-based activity recognition applications, and eliminate the need for expensive and privacy-compromising data collection. 
+
+## 2. <span id="2"> Demo Video</span>
 
 A short demo video of the gaze-based museum activity recognition is shown below. The demo is running on the [Magic Leap One](https://www.magicleap.com/en-us/magic-leap-1) AR headset. The system leverages the gaze signals captured by [the onboard eye tracker](https://developer.magicleap.com/en-us/learn/guides/design-eye-gaze) in Magic Leap One to continuously track the interactive activity the user is performing, i.e., reading the text descriptions of an exhibit or browsing the painting. Then, based on the recognized user context, they AR system adjusts the digital content that is rendered in the user's view to enhance her engagement and learning experience.
 
@@ -19,12 +26,12 @@ A short demo video of the gaze-based museum activity recognition is shown below.
 [![Demo](https://github.com/EyeSyn/EyeSynResource/blob/main/demoGIF.gif)](https://youtu.be/s3GtVBg2JMg)
 
 
-## 2. <span id="2"> VisualProcessingActivity Eye Movement Dataset</span>
-### 2.1 Data Collection Setup
+## 3. <span id="3"> VisualProcessingActivity Eye Movement Dataset</span>
+### 3.1 Data Collection Setup
 
 We collect a gaze dataset, denoted as *VisualProcessingActivity*. The study is approved by our institution's Institutional Review Board. Two different eye tracking devices, the [PupilLabs](https://pupil-labs.com/products/core/) and the [Magic Leap One](https://www.magicleap.com/en-us/magic-leap-1), are used in the data collection. Eight subjects (three female and five male, aged between 24 and 33) participate in the study: four subjects leverage the onboard eye tracker in the Magic Leap One, while the others use the Pupil Labs for eye movement collection. Both devices capture eye movements with the sampling frequency of 30Hz. Specifically, the subjects who are wearing the Pupil Labs are sitting in front of a 34-inch computer monitor at a distance of 50cm. The visual stimulus for each of the activities is displayed on the monitor. The resolution of the display is 800x600. We conduct the manufacturer's default on-screen five-points calibration for each of the subjects. For the Magic Leap One, the stimuli are rendered as virtual holograms placed on blank white walls around a room at head height. The holograms are with a size of 50cmx50cm in size, and their distances to the subjects are 1 to 1.5m. We perform the built-in visual calibration on the Magic Leap One for each of the subjects. 
 
-### 2.2 Activities and Visual Stimuli used in Data Collection
+### 3.2 Activities and Visual Stimuli used in Data Collection
 For both devices, we ask the subjects to perform each of the four activities, i.e., *Read, Communicate, Browse, and Watch*, for five minutes. They can freely choose the stimuli that we have prepared:
 
 - **Read**: we create three sets of text images from three digital reading materials that *differ in both text layout and font size*: a transcription of Richard Hamming’s talk on *“You and Your Research”* [1]; a chapter from the book *“Rich Dad Poor Dad”* [2]; and a chapter from the book *“Discrete Calculus”* [3]. Examples of the text images we used as the visual stimuli are shown below:
@@ -107,16 +114,16 @@ For both devices, we ask the subjects to perform each of the four activities, i.
 </p>
 </br>
 
-### 2.3 Download the Dataset
+### 3.3 Download the Dataset
 
 **Data Preprocessing:** we have applied basic data preprocessing to the collected eye movement data. Specifically, we first remove the corrupted gaze points by filtering any measurements with confidence level lower than 0.6 (the confidence level is the indicator used by both eye trackers to assess their confidenceon the correctness of the gaze measurements). Then, we apply a median filter with a sliding window of 90 samples to detect and filter the outliers in the measurements (i.e., gaze points that havea large Euclidean distance to the remaining samples in the sliding window). Lastly, we use spline interpolation to harmonize and resample the filtered gaze signal to its original length.
 
 The preprocessed dataset will be made available [**here**](). 
 
 
-## 3. <span id="3"> EyeSyn Implementation</span>
+## 4. <span id="4"> EyeSyn Implementation</span>
 
-### 3.1 Inputs for Eye Movement Synthesis
+### 4.1 Inputs for Eye Movement Synthesis
 We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye movement dataset, denoted as SynGaze. Specifically, we use the following image and video data as the inputs to simulate gaze signals for the four activities. **Note that**, to aviod potential copyright infringement, we will not share the extracted video clips and images that are used in the dataset generation. Instead, we will open-source our generative models and provide detailed examples of the synthesizing process, such that one can easily prepared his/her own inputs and use the models for eye movement synthesis.
 
 - **Read**: we extract 100 text images from each of the three digital books, “*Rich Dad Poor Dad*” [2], “*Discrete Calculus*” [3], and the “*Adler’s Physiology of the Eye*” [9]. The three books differ in both text layout and font size. The extracted text images are used as the inputs of the **ReadingGaze model**. *The source code of ReadingGaze model with example will be made available [**here**]()*. 
@@ -127,7 +134,7 @@ We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye m
 
 - **Watch**: we extract 50 short documentary videos from the online video series of the “*National Geographic Animals 101*” [[8]](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts) as the inputs of the **DynamicScene model**. Each video lasts for 2 to 6 minutes. *The source code of DynamicScene model with example will be made available [**here**]()*. 
 
-## 4. <span id="4">Citation</span>
+## 5. <span id="5">Citation</span>
 
 Please cite the following paper in your publications if the codes or dataset helps your research.
 
@@ -139,7 +146,7 @@ Please cite the following paper in your publications if the codes or dataset hel
     }
 
 
-## 5. <span id="5">Acknowledgments</span>
+## 6. <span id="6">Acknowledgments</span>
 We thank the study's participants for their time in the data collection. This study was done in the [Intelligent Interactive Internet of Things Lab](https://maria.gorlatova.com/) at [Duke University](https://www.duke.edu/), and was approved by our institution's Institutional Review Board.  
 
 The authors of this repository are [Guohao Lan](https://guohao.netlify.com/), [Tim Scargill](https://sites.duke.edu/timscargill/), and [Maria Gorlatova](https://maria.gorlatova.com/). Contact Information of the authors: 
