@@ -1,7 +1,5 @@
 # Research Artifacts of EyeSyn
-This repository contains the research artifacts for the **ACM/IEEE IPSN 2022** paper ["EyeSyn: Psychology-inspired Eye Movement Synthesis for Gaze-based Activity Recognition"](https://maria.gorlatova.com/wp-content/uploads/2022/03/EyeSyn_CR.pdf) by [Guohao Lan](https://guohao.netlify.app/), [Tim Scargill](https://sites.duke.edu/timscargill/), and [Maria Gorlatova](https://maria.gorlatova.com/). 
-
-If you have any questions on this repository or the related paper, please contact **Guohao Lan** via *g.lan [AT] tudelft [DOT] NL*.
+This repository contains the research artifacts for the **ACM/IEEE IPSN 2022** paper ["EyeSyn: Psychology-inspired Eye Movement Synthesis for Gaze-based Activity Recognition"](https://maria.gorlatova.com/wp-content/uploads/2022/03/EyeSyn_CR.pdf), including the implementation of the generative models and our own collected gaze dataset.
 
 ## **Outline**
 
@@ -11,12 +9,17 @@ If you have any questions on this repository or the related paper, please contac
 * [EyeSyn Implementation](#4)
 * [Citation](#5)
 * [Acknowledgments](#6)
- 
+
+The rest of the repository is organized as follows. [**Section 1**](#1) gives a brief overview of EyeSyn. [**Section 2**](#2) shows a short demo video of the gaze-based museum activity recognition. [**Section 3**](#3) introduces our own collected eye movement dataset. [**Section 4**](#4) brief introduces the implementation of the four generative models. The citation information, author contacts, and acknowledgements are introduced in [**Section 5**](#5) and [**Section 6**](#6). 
+
+
 ## 1. <span id="1"> Overview</span> 
 <p align="center"><img src="systemOverview.png" width="580"\></p>
 <p align="center"><strong>Figure 1. Overview of EyeSyn design.</strong></p> 
 
-EyeSyn is a comprehensive set of psychology-inspired generative models for eye movement synthesis. An overview of EyeSyn is shown in Figure 1. It takes publicly available images and videos as the inputs to synthesize realistic eye movements for four common categories of cognitive activity, including: *text reading*, *verbal communication*, and *static and dynamic scene perception*. EyeSyn incorporates three psychology-inspired generative models to synthesize the corresponding visual behaviors that would be captured by an eye tracker when a subject is performing the activity. Moreover, to generate realistic gaze signals, the fixation model is introduced to simulate gaze perturbations that result from both microsaccades and the measurement noise in eye tracking. EyeSyn opens up opportunities to generate realistic, large-scale eye movement datasets that can facilitate the training of gaze-based activity recognition applications, and eliminate the need for expensive and privacy-compromising data collection. Moreover, EyeSyn can also benefit applications that feature animated characters or avatars, such as video games, social conversational agents, and photo-realistic facial animation for virtual reality. The synthesized gaze signals can be used as the inputs of the avatar model to produce realistic eye movements for the facial animation. 
+EyeSyn is a comprehensive set of psychology-inspired generative models for eye movement synthesis. An overview of EyeSyn is shown in Figure 1. It takes publicly available images and videos as the inputs to synthesize realistic eye movements for four common categories of cognitive activity, including: *text reading*, *verbal communication*, and *static and dynamic scene perception*. EyeSyn incorporates three psychology-inspired generative models to synthesize the corresponding visual behaviors that would be captured by an eye tracker when a subject is performing the activity. Moreover, to generate realistic gaze signals, the fixation model is introduced to simulate gaze perturbations that result from both microsaccades and the measurement noise in eye tracking. 
+
+EyeSyn opens up opportunities to generate realistic, large-scale eye movement datasets that can facilitate the training of gaze-based activity recognition applications, and eliminate the need for expensive and privacy-compromising data collection. Moreover, EyeSyn can also benefit applications that feature animated characters or avatars, such as video games, social conversational agents, and photo-realistic facial animation for virtual reality. The synthesized gaze signals can be used as the inputs of the avatar model to produce realistic eye movements for the facial animation. 
 
 ## 2. <span id="2"> Demo Video</span>
 
