@@ -159,7 +159,7 @@ The authors of this repository are [Guohao Lan](https://guohao.netlify.com/), [T
 
 This work was supported in part by NSF grants CSR-1903136 and CNS-1908051, NSF CAREER Award IIS-2046072, and an IBM Faculty Award.
 
-## **References**:
+## **References**
 
   <p>[1] J. F. Kaiser, "Richard hamming-you and your research," Simula Research Laboratory. Springer, Berlin, Heidelberg, 2010. 37-60.</p> 
   
