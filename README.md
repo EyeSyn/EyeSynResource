@@ -159,7 +159,7 @@ Dataset
 │   └───Subject4
 ```
 
-The txt files contains the gaze samples (a **9000 x 2** time series) collected from the subject when she/he is performing the activity. The **9000** corresponds to a **5 minutes (300 seconds)** gaze data sampled at **30Hz**, the **2** columns correspond to the **normalized X and Y coordinates of the gaze points**.
+Each of the *gaze_points.txt* files contains the gaze samples (a **9000 x 2** time series) collected from the subject when she/he is performing the corresponding activity. The **9000** corresponds to a **5 minutes (300 seconds)** gaze data sampled at **30Hz**, the **2** columns correspond to the **normalized X and Y coordinates of the gaze points**.
 
 
 ## 4. <span id="4"> EyeSyn Implementation</span>
