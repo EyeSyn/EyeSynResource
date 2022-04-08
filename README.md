@@ -121,7 +121,45 @@ For both devices, we ask the subjects to perform each of the four activities, i.
 
 **Data Preprocessing:** we have applied basic data preprocessing to the collected eye movement data. Specifically, we first remove the corrupted gaze points by filtering any measurements with confidence level lower than 0.6 (the confidence level is the indicator used by both eye trackers to assess their confidenceon the correctness of the gaze measurements). Then, we apply a median filter with a sliding window of 90 samples to detect and filter the outliers in the measurements (i.e., gaze points that havea large Euclidean distance to the remaining samples in the sliding window). Lastly, we use spline interpolation to harmonize and resample the filtered gaze signal to its original length.
 
-The preprocessed dataset will be made available [**here**](). 
+The preprocessed dataset is available [**here**](). 
+
+
+#### The structure of the dataset
+
+The dataset follows a hierarchical file structure shown below:
+```
+Dataset
+└───MagicLeap
+│   │
+│   └───Subject1
+│       └───Browse
+│           └───gaze_points.txt
+│       └───Communicate
+│           └───gaze_points.txt
+│       └───Read
+│           └───gaze_points.txt
+│       └───Watch
+│           └───gaze_points.txt
+│   └───Subject2
+│   └───Subject3
+│   └───Subject4
+└───PupilLab
+│   │
+│   └───Subject1
+│       └───Browse
+│           └───gaze_points.txt
+│       └───Communicate
+│           └───gaze_points.txt
+│       └───Read
+│           └───gaze_points.txt
+│       └───Watch
+│           └───gaze_points.txt
+│   └───Subject2
+│   └───Subject3
+│   └───Subject4
+```
+
+The txt files contains the gaze samples (a **9000 x 2** time series) collected from the subject when she/he is performing the activity. The **9000** corresponds to a **5 minutes (300 seconds)** gaze data sampled at **30Hz**, the **2** columns correspond to the **normalized X and Y coordinates of the gaze points**.
 
 
 ## 4. <span id="4"> EyeSyn Implementation</span>
