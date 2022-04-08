@@ -121,7 +121,7 @@ For both devices, we ask the subjects to perform each of the four activities, i.
 
 **Data Preprocessing:** we have applied basic data preprocessing to the collected eye movement data. Specifically, we first remove the corrupted gaze points by filtering any measurements with confidence level lower than 0.6 (the confidence level is the indicator used by both eye trackers to assess their confidenceon the correctness of the gaze measurements). Then, we apply a median filter with a sliding window of 90 samples to detect and filter the outliers in the measurements (i.e., gaze points that havea large Euclidean distance to the remaining samples in the sliding window). Lastly, we use spline interpolation to harmonize and resample the filtered gaze signal to its original length.
 
-The preprocessed dataset is available [**here**](). 
+The preprocessed dataset is available [**here**](https://github.com/EyeSyn/EyeSynResource/blob/main/dataset.zip). 
 
 
 #### The structure of the dataset
