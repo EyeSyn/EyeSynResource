@@ -172,15 +172,20 @@ We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye m
 The implementation of the ReadGaze Model containts the following scripts: 
 ```
 readGazeCodes
-└───mainText.m  %%The main function
+└───mainText.m  ##The main function
 │   │    
-│   └───ORCText.m %%The script that leverages ORC text recognition to identify the optimal viewing positions in the input text image;  
-│   └───readGazeMain.m  ## 
+│   └───ORCText.m   ##The script that leverages ORC text recognition to identify the optimal viewing positions in the input text image;  
+│   └───readGazeMain.m   
 │       └───fixationProByLength.m  ## Implementation of the skipping effect and fixation selection.
 │       └───gazeSythesisOnFixOnText.m  ## Synthesis gaze points on the selected fixation positions.
 ```
 
 
+<p align="center"><img src="readGazeModel/ORCTextRecog.png" width="580"\></p>
+<p align="center"><strong>Figure 2. Example of the detected optimal viewing positions on the imput text image.</strong></p> 
+
+<p align="center"><img src="readGazeModel/exampleReadGaze1.png" width="580"\></p>
+<p align="center"><strong>Figure 3. Example of the synthesized gaze signal.</strong></p> 
 
 ### 4.2 VerbalGaze Model
 - **Communicate**: we extract 100 monologue video clips from the online interview series of the “*ACM Turing Award Laureate interview*” [10] as the inputs of the **VerbalGaze model**. Each video clip lasts 5 to 7 minutes with a frame rate of 30fps. *The source code of VerbalGaze model with example will be made available [**here**]()*. 
