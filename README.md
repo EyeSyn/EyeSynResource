@@ -180,13 +180,13 @@ readGazeCodes
 │       └───gazeSythesisOnFixOnText.m  ## Synthesis gaze points on the selected fixation positions.
 ```
 
-Please refer to section 4.2 in the paper for details about the design. You should be able to generate the following results when running the code:
+Please refer to section 4.2 in the paper for details about the design. When running the code, you should be able to generate the following results:
 
 <p align="center"><img src="readGazeModel/ORCTextRecog.png" width="580"\></p>
-<p align="center"><strong>Figure 2. Example of the detected optimal viewing positions on the imput text image.</strong></p> 
+<p align="center"><strong>Figure 2. Example of the detected optimal viewing positions on the input text image.</strong></p> 
 
 <p align="center"><img src="readGazeModel/exampleReadGaze1.png" width="580"\></p>
-<p align="center"><strong>Figure 3. Example of the synthesized gaze signal.</strong></p> 
+<p align="center"><strong>Figure 3. Scatter plot of the synthesized gaze signal.</strong></p> 
 
 <p align="center"><img src="readGazeModel/exampleReadGaze2.png" width="580"\></p>
 <p align="center"><strong>Figure 3. Example of the synthesized gaze signal in the time-domain.</strong></p> 
