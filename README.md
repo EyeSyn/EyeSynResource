@@ -180,7 +180,7 @@ readGazeCodes
 │       └───gazeSythesisOnFixOnText.m  ## Synthesis gaze points on the selected fixation positions.
 ```
 
-**Example:**
+Please refer to section 4.2 in the paper for details about the design. You should be able to generate the following results when running the code:
 
 <p align="center"><img src="readGazeModel/ORCTextRecog.png" width="580"\></p>
 <p align="center"><strong>Figure 2. Example of the detected optimal viewing positions on the imput text image.</strong></p> 
