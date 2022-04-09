@@ -182,14 +182,11 @@ readGazeCodes
 
 Please refer to section 4.2 in the paper for details about the design. When running the code, you should be able to generate the following results:
 
-<p align="center"><img src="readGazeModel/ORCTextRecog.png" width="580"\></p>
-<p align="center"><strong>Figure 2. Example of the detected optimal viewing positions on the input text image.</strong></p> 
+<p align="center"><img src="readGazeModel/ORCTextRecog.png" width="480"\> <img src="readGazeModel/exampleReadGaze1.png" width="480"\></p>
+<strong>Figure 2. Left: example of the detected optimal viewing positions on the input text image; Right: scatter plot of the synthesized gaze points.</strong></p> 
 
-<p align="center"><img src="readGazeModel/exampleReadGaze1.png" width="580"\></p>
-<p align="center"><strong>Figure 3. Scatter plot of the synthesized gaze signal.</strong></p> 
 
-<p align="center"><img src="readGazeModel/exampleReadGaze2.png" width="580"\></p>
-<p align="center"><strong>Figure 3. Example of the synthesized gaze signal in the time-domain.</strong></p> 
+
 
 ### 4.2 VerbalGaze Model
 - **Communicate**: we extract 100 monologue video clips from the online interview series of the “*ACM Turing Award Laureate interview*” [10] as the inputs of the **VerbalGaze model**. Each video clip lasts 5 to 7 minutes with a frame rate of 30fps. *The source code of VerbalGaze model with example will be made available [**here**]()*. 
