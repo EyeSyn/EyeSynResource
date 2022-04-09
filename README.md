@@ -167,13 +167,23 @@ Each of the *gaze_points.txt* files contains the gaze samples (a **9000 x 2** ti
 We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye movement dataset, denoted as SynGaze. Specifically, we use the following image and video data as the inputs to simulate gaze signals for the four activities. **Note that**, to aviod potential copyright infringement, we will not share the extracted video clips and images that are used in the dataset generation. Instead, we will open-source our generative models and provide detailed examples of the synthesizing process, such that one can easily prepared his/her own inputs and use the models for eye movement synthesis.
 
 ### 4.1 ReadGaze Model
-*The source code of ReadGaze model is available [**here**](https://github.com/EyeSyn/EyeSynResource/tree/main/readGazeModel)*. 
-
-### 4.5 Inputs for Eye Movement Synthesis
 - **Read**: we extract 100 text images from each of the three digital books, “*Rich Dad Poor Dad*” [2], “*Discrete Calculus*” [3], and the “*Adler’s Physiology of the Eye*” [9]. The three books differ in both text layout and font size. The extracted text images are used as the inputs of the **ReadGaze model**. *The source code of ReadGaze model is available [**here**](https://github.com/EyeSyn/EyeSynResource/tree/main/readGazeModel)*. 
 
+The implementation of the ReadGaze Model containts the following scripts: 
+```
+readGazeCodes
+└───mainText.m  ##The main function
+│   │
+│   └───ORCText.m   ## The script that leverages ORC text recognition to identify the optimal viewing positions in the input text image;
+│   └───readGazeMain.m  ## 
+│       └───fixationProByLength.m  ##
+│       └───gazeSythesisOnFixOnText.m  ##
+```
+
+### 4.2 VerbalGaze Model
 - **Communicate**: we extract 100 monologue video clips from the online interview series of the “*ACM Turing Award Laureate interview*” [10] as the inputs of the **VerbalGaze model**. Each video clip lasts 5 to 7 minutes with a frame rate of 30fps. *The source code of VerbalGaze model with example will be made available [**here**]()*. 
 
+### 4.3 Scene Preception Model
 - **Browse**: we leverage the public available *''Best Artworks of All Time''* painting image dataset [[7]](https://www.kaggle.com/ikarus777/best-artworks-of-all-time), which consists of 7,937 images of famous paintings, as the inputs of the **StaticScene model**. *The source code of StaticScene model with example will be made available [**here**]()*. 
 
 - **Watch**: we extract 50 short documentary videos from the online video series of the “*National Geographic Animals 101*” [[8]](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts) as the inputs of the **DynamicScene model**. Each video lasts for 2 to 6 minutes. *The source code of DynamicScene model with example will be made available [**here**]()*. 
