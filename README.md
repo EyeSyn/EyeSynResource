@@ -185,7 +185,19 @@ You can run the script `mainText.m` directly and you should be able to generate 
 In the paper, we extract 100 text images from each of the three digital books, “*Rich Dad Poor Dad*” [2], “*Discrete Calculus*” [3], and the “*Adler’s Physiology of the Eye*” [9], as the inputs for gaze synthesis. The three books differ in both text layout and font size. 
 
 ### 4.2 VerbalGaze Model
-- **Communicate**: we extract 100 monologue video clips from the online interview series of the “*ACM Turing Award Laureate interview*” [10] as the inputs of the **VerbalGaze model**. Each video clip lasts 5 to 7 minutes with a frame rate of 30fps. *The source code of VerbalGaze model with example will be made available [**here**]()*. 
+*The source code of VerbalGaze model is available [**here**](https://github.com/EyeSyn/EyeSynResource/blob/main/verbalGazeModel/verbalGazeCodes.zip)*.  Please refer to section 4.2 in the paper for details about the design. The ReadGaze Model containts the following scripts: 
+```
+verbalGazeCodes
+└───mainVerbalGaze.m  ##The main function
+│   │    
+│   └───faceDetection.m   ##The script that leverages ORC text recognition to identify the optimal viewing positions in the input text image;  
+│   └───mainTalkingWeighted.m   
+│       └───fixationPD.m  ## Implementation of the skipping effect and fixation selection.
+│       └───gazeSythesisOnFixation.m  ## Synthesis gaze points on the selected fixation positions.
+```
+You can run the script `mainText.m` directly
+
+- **Communicate**: we extract 100 monologue video clips from the online interview series of the “*ACM Turing Award Laureate interview*” [10] as the inputs of the **VerbalGaze model**. Each video clip lasts 5 to 7 minutes with a frame rate of 30fps. *The source code of VerbalGaze model with example will be made available [**here**](https://github.com/EyeSyn/EyeSynResource/blob/main/verbalGazeModel/verbalGazeCodes.zip)*. 
 
 ### 4.3 Scene Preception Model
 - **Browse**: we leverage the public available *''Best Artworks of All Time''* painting image dataset [[7]](https://www.kaggle.com/ikarus777/best-artworks-of-all-time), which consists of 7,937 images of famous paintings, as the inputs of the **StaticScene model**. *The source code of StaticScene model with example will be made available [**here**]()*. 
