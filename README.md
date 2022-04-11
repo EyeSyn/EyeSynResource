@@ -119,14 +119,9 @@ For both devices, we ask the subjects to perform each of the four activities, i.
 
 ### 3.3 Download the Dataset
 
-**Data Preprocessing:** we have applied basic data preprocessing to the collected eye movement data. Specifically, we first remove the corrupted gaze points by filtering any measurements with confidence level lower than 0.6 (the confidence level is the indicator used by both eye trackers to assess their confidenceon the correctness of the gaze measurements). Then, we apply a median filter with a sliding window of 90 samples to detect and filter the outliers in the measurements (i.e., gaze points that havea large Euclidean distance to the remaining samples in the sliding window). Lastly, we use spline interpolation to harmonize and resample the filtered gaze signal to its original length.
+**Data Preprocessing:** we have applied basic data preprocessing to the collected eye movement data. Specifically, we first remove the corrupted gaze points by filtering any measurements with confidence level lower than 0.6 (the confidence level is the indicator used by both eye trackers to assess their confidenceon the correctness of the gaze measurements). Then, we apply a median filter with a sliding window of 90 samples to detect and filter the outliers in the measurements (i.e., gaze points that havea large Euclidean distance to the remaining samples in the sliding window). Lastly, we use spline interpolation to harmonize and resample the filtered gaze signal to its original length. The preprocessed dataset is available [**here**](https://github.com/EyeSyn/EyeSynResource/blob/main/dataset.zip). 
 
-The preprocessed dataset is available [**here**](https://github.com/EyeSyn/EyeSynResource/blob/main/dataset.zip). 
-
-
-#### The structure of the dataset
-
-The dataset follows a hierarchical file structure shown below:
+**The structure of the dataset:** the dataset follows a hierarchical file structure shown below:
 ```
 Dataset
 └───MagicLeap
@@ -188,15 +183,17 @@ In the paper, we extract 100 text images from each of the three digital books, �
 ```
 verbalGazeCodes
 └───mainVerbalGaze.m  ##The main script
-└───faceDetection.m   ##The script that leverages the Viola-Jones algorith to track the eyes, nose, and mouth of the speaker as the potential fixation locations;  
+└───faceDetection.m   ##The script that leverages the Viola-Jones algorithm to track the eyes, nose, and mouth of the speaker as the potential fixation locations;  
 └───mainTalkingWeighted.m  ## Implementation of the Markov chain-based attention model. 
 └───fixationPD.m  ## Probability distribution of the fixation duration.
 └───gazeSythesisOnFixation.m  ## Synthesis gaze points on the selected fixation positions.
 ```
 You can run the script `mainVerbalGaze.m` directly for gaze synthesis. In the paper, we extract 100 monologue video clips from the online interview series of the “*ACM Turing Award Laureate interview*” [10] as the inputs of the **VerbalGaze model**. Each video clip lasts 5 to 7 minutes with a frame rate of 30fps. 
 
-### 4.3 Scene Preception Model
-- **Browse**: we leverage the public available *''Best Artworks of All Time''* painting image dataset [[7]](https://www.kaggle.com/ikarus777/best-artworks-of-all-time), which consists of 7,937 images of famous paintings, as the inputs of the **StaticScene model**. *The source code of StaticScene model with example will be made available [**here**]()*. 
+### 4.3 StaticScene Model
+*The source code of StaticScene model with example will be made available [**here**]()*. 
+
+- **Browse**: we leverage the public available *''Best Artworks of All Time''* painting image dataset [[7]](https://www.kaggle.com/ikarus777/best-artworks-of-all-time), which consists of 7,937 images of famous paintings, as the inputs of the **StaticScene model**. 
 
 - **Watch**: we extract 50 short documentary videos from the online video series of the “*National Geographic Animals 101*” [[8]](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts) as the inputs of the **DynamicScene model**. Each video lasts for 2 to 6 minutes. *The source code of DynamicScene model with example will be made available [**here**]()*. 
 
