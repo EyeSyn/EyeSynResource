@@ -191,7 +191,7 @@ verbalGazeCodes
 You can run the script `mainVerbalGaze.m` directly for gaze synthesis. In the paper, we extract 100 monologue video clips from the online interview series of the “*ACM Turing Award Laureate interview*” [10] as the inputs of the **VerbalGaze model**. Each video clip lasts 5 to 7 minutes with a frame rate of 30fps. 
 
 ### 4.3 StaticScene Model
-*The source code of StaticScene model with example will be made available [**here**](https://github.com/EyeSyn/EyeSynResource/tree/main/scenePerceptionModel)*. Please refer to section 4.4 in the paper for details about the design. The StaticScene Model containts the following scripts: 
+*The source code of StaticScene model with example is available [**here**](https://github.com/EyeSyn/EyeSynResource/tree/main/scenePerceptionModel)*. Please refer to section 4.4 in the paper for details about the design. The StaticScene Model containts the following scripts: 
 ```
 staticScenePerceptionCodes
 └───mainStaticScene.m  ##The main script
