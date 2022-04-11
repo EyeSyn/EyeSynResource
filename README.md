@@ -170,12 +170,11 @@ We implement EyeSyn in MATLAB, and use it to construct a massive synthetic eye m
 *The source code of ReadGaze model is available [**here**](https://github.com/EyeSyn/EyeSynResource/tree/main/readGazeModel)*.  Please refer to section 4.2 in the paper for details about the design. The ReadGaze Model containts the following scripts: 
 ```
 readGazeCodes
-└───mainText.m  ##The main function
-│   │    
-│   └───ORCText.m   ##The script that leverages ORC text recognition to identify the optimal viewing positions in the input text image;  
-│   └───readGazeMain.m   
-│       └───fixationProByLength.m  ## Implementation of the skipping effect and fixation selection.
-│       └───gazeSythesisOnFixOnText.m  ## Synthesis gaze points on the selected fixation positions.
+└───mainText.m  ##The main script
+└───ORCText.m   ##The script that leverages ORC text recognition to identify the optimal viewing positions in the input text image;  
+└───readGazeMain.m   
+└───fixationProByLength.m  ## Implementation of the skipping effect and fixation selection.
+└───gazeSythesisOnFixOnText.m  ## Synthesis gaze points on the selected fixation positions.
 ```
 You can run the script `mainText.m` directly and you should be able to generate the following results:
 
@@ -188,16 +187,13 @@ In the paper, we extract 100 text images from each of the three digital books, �
 *The source code of VerbalGaze model is available [**here**](https://github.com/EyeSyn/EyeSynResource/blob/main/verbalGazeModel/verbalGazeCodes.zip)*.  Please refer to section 4.2 in the paper for details about the design. The ReadGaze Model containts the following scripts: 
 ```
 verbalGazeCodes
-└───mainVerbalGaze.m  ##The main function
-│   │    
-│   └───faceDetection.m   ##The script that leverages ORC text recognition to identify the optimal viewing positions in the input text image;  
-│   └───mainTalkingWeighted.m   
-│       └───fixationPD.m  ## Implementation of the skipping effect and fixation selection.
-│       └───gazeSythesisOnFixation.m  ## Synthesis gaze points on the selected fixation positions.
+└───mainVerbalGaze.m  ##The main script
+└───faceDetection.m   ##The script that leverages the Viola-Jones algorith to track the eyes, nose, and mouth of the speaker as the potential fixation locations;  
+└───mainTalkingWeighted.m  ## Implementation of the Markov chain-based attention model. 
+└───fixationPD.m  ## Probability distribution of the fixation duration.
+└───gazeSythesisOnFixation.m  ## Synthesis gaze points on the selected fixation positions.
 ```
-You can run the script `mainText.m` directly
-
-- **Communicate**: we extract 100 monologue video clips from the online interview series of the “*ACM Turing Award Laureate interview*” [10] as the inputs of the **VerbalGaze model**. Each video clip lasts 5 to 7 minutes with a frame rate of 30fps. *The source code of VerbalGaze model with example will be made available [**here**](https://github.com/EyeSyn/EyeSynResource/blob/main/verbalGazeModel/verbalGazeCodes.zip)*. 
+You can run the script `mainVerbalGaze.m` directly for gaze synthesis. In the paper, we extract 100 monologue video clips from the online interview series of the “*ACM Turing Award Laureate interview*” [10] as the inputs of the **VerbalGaze model**. Each video clip lasts 5 to 7 minutes with a frame rate of 30fps. 
 
 ### 4.3 Scene Preception Model
 - **Browse**: we leverage the public available *''Best Artworks of All Time''* painting image dataset [[7]](https://www.kaggle.com/ikarus777/best-artworks-of-all-time), which consists of 7,937 images of famous paintings, as the inputs of the **StaticScene model**. *The source code of StaticScene model with example will be made available [**here**]()*. 
