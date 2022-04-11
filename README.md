@@ -203,6 +203,15 @@ Note that you need to download the [SaliencyToolbox](https://www.saliencytoolbox
 
 
 ### 4.4 DynamicScene Model
+*The source code of DynamicScene model with example is available [**here**](https://github.com/EyeSyn/EyeSynResource/tree/main/scenePerceptionModel)*. Please refer to section 4.4 in the paper for details about the design. The StaticScene Model containts the following scripts: 
+```
+staticScenePerceptionCodes
+└───mainStaticScene.m  ##The main script
+└───mainImageWeighted.m  ## Implementation of the static scene perception. 
+└───fixationPD.m  ## Probability distribution of the fixation duration.
+└───gazeSythesisOnFixationImage.m  ## Synthesis gaze points on the selected fixation positions.
+```
+Note that you need to download the [SaliencyToolbox](https://www.saliencytoolbox.net/doc/index.html#installation) for the bottom-up saliency-based fixation estimation. In the paper, we leverage the public available *''Best Artworks of All Time''* painting image dataset [[7]](https://www.kaggle.com/ikarus777/best-artworks-of-all-time), which consists of 7,937 images of famous paintings, as the inputs of the **StaticScene model**. 
 - **Watch**: we extract 50 short documentary videos from the online video series of the “*National Geographic Animals 101*” [[8]](https://www.youtube.com/playlist?list=PLaP7riDmeeBVAZOy_l1jrvJpPENNZYqts) as the inputs of the **DynamicScene model**. Each video lasts for 2 to 6 minutes. *The source code of DynamicScene model with example will be made available [**here**]()*. 
 
 ## 5. <span id="5">Citation</span>
