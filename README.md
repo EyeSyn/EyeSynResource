@@ -1,5 +1,5 @@
 # Research Artifacts of EyeSyn
-This repository contains the research artifacts for the **ACM/IEEE IPSN 2022** paper ["EyeSyn: Psychology-inspired Eye Movement Synthesis for Gaze-based Activity Recognition"](https://maria.gorlatova.com/wp-content/uploads/2022/03/EyeSyn_CR.pdf), including the implementation of the generative models and our own collected gaze dataset.
+This repository contains the research artifacts, i.e., dataset and implementation codes, for the **ACM/IEEE IPSN 2022** paper ["EyeSyn: Psychology-inspired Eye Movement Synthesis for Gaze-based Activity Recognition"](https://maria.gorlatova.com/wp-content/uploads/2022/03/EyeSyn_CR.pdf), including the implementation of the generative models and our own collected gaze dataset.
 
 ## **Outline**
 
